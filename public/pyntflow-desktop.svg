@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
+      .font-sans { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+    </style>
+    <pattern id="desktopGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#E2E8F0" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <linearGradient id="logoFlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Background with subtle grid -->
+  <rect x="0" y="0" width="1600" height="1000" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#desktopGrid)"/>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="1600" height="68" fill="#FFFFFF" fill-opacity="0.95"/>
+  <line x1="0" y1="68" x2="1600" y2="68" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Logo -->
+  <g transform="translate(80, 20)">
+    <text x="0" y="25" class="font-sans" font-size="24" font-weight="800" fill="#0284C7" letter-spacing="-0.5">Pynt<tspan fill="url(#logoFlow)">flow</tspan></text>
+  </g>
+
+  <!-- Nav links -->
+  <g class="font-sans" font-size="13.5" font-weight="500" fill="#475569">
+    <text x="480" y="40">Features ▾</text>
+    <text x="570" y="40">Pricing</text>
+    <text x="640" y="40">Blog</text>
+    <text x="700" y="40">FAQ</text>
+    <text x="755" y="40">About</text>
+    <text x="820" y="40">Contact</text>
+  </g>
+
+  <!-- Nav Right CTA -->
+  <text x="1360" y="40" class="font-sans" font-size="13" font-weight="500" fill="#334155">Interactive Demo</text>
+  <rect x="1460" y="18" width="100" height="34" rx="17" fill="#0F172A"/>
+  <text x="1510" y="39.5" text-anchor="middle" class="font-sans" font-size="12" font-weight="600" fill="#FFFFFF">Get Started →</text>
+
+  <!-- HERO SECTION -->
+  <!-- Blue Pill Badge -->
+  <g transform="translate(800, 105)">
+    <rect x="-190" y="0" width="380" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="-168" cy="14" r="3.5" fill="#2563EB"/>
+    <text x="-154" y="18.5" class="font-sans" font-size="11" font-weight="600" fill="#334155">Built Specifically for Paint Retailers &amp; Wholesale Dealers</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="800" y="175" text-anchor="middle" class="font-sans" font-size="42" font-weight="800" fill="#0F172A" letter-spacing="-1">The Point of Sale Built for Paint</text>
+  <text x="800" y="225" text-anchor="middle" class="font-sans" font-size="42" font-weight="800" fill="#0F172A" letter-spacing="-1">Buckets, Bases &amp; Khatas.</text>
+
+  <!-- Subtitle -->
+  <g class="font-sans" font-size="14.5" font-weight="400" fill="#475569" text-anchor="middle">
+    <text x="800" y="260">Stop forcing grocery software onto paint inventory. Manage AI invoice scanning, paint tokens, gallons, 16L drums,</text>
+    <text x="800" y="282">tinting formulas, painter credit balances, and supplier bills from one purpose-built counter system.</text>
+  </g>
+
+  <!-- CTA Buttons -->
+  <g transform="translate(800, 310)">
+    <rect x="-180" y="0" width="210" height="44" rx="22" fill="#0F172A"/>
+    <text x="-75" y="27" text-anchor="middle" class="font-sans" font-size="13" font-weight="600" fill="#FFFFFF">Request Free Live Demo →</text>
+
+    <rect x="45" y="0" width="155" height="44" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    <polygon points="75,18 75,26 83,22" fill="#2563EB"/>
+    <text x="130" y="27" text-anchor="middle" class="font-sans" font-size="13" font-weight="600" fill="#334155">Explore Features</text>
+  </g>
+
+  <!-- 4 Checklist Items -->
+  <g class="font-sans" font-size="11.5" font-weight="500" fill="#475569" transform="translate(800, 380)">
+    <text x="-310" y="0" fill="#059669">✓<tspan fill="#334155"> AI Invoice Scanner</tspan></text>
+    <text x="-160" y="0" fill="#059669">✓<tspan fill="#334155"> Paint Token Ledger</tspan></text>
+    <text x="10" y="0" fill="#059669">✓<tspan fill="#334155"> Gallon &amp; Drum Units</tspan></text>
+    <text x="170" y="0" fill="#059669">✓<tspan fill="#334155"> Silent Thermal Printing</tspan></text>
+  </g>
+
+  <!-- INTERACTIVE MOCKUP WINDOW -->
+  <g transform="translate(120, 415)">
+    <!-- Window Shadow & Background -->
+    <rect x="0" y="0" width="1360" height="520" rx="16" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+
+    <!-- Window Titlebar -->
+    <rect x="0" y="0" width="1360" height="38" rx="16" fill="#020617"/>
+    <rect x="0" y="22" width="1360" height="16" fill="#020617"/>
+    <line x1="0" y1="38" x2="1360" y2="38" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Traffic Lights -->
+    <circle cx="24" cy="19" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="19" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="19" r="5" fill="#10B981"/>
+
+    <!-- Titlebar Text -->
+    <text x="84" y="23" class="font-mono" font-size="11" fill="#94A3B8">Pyntflow POS Billing • Counter Register #01</text>
+
+    <!-- Green Badge -->
+    <rect x="1220" y="9" width="120" height="20" rx="4" fill="#064E3B" stroke="#047857" stroke-width="0.8"/>
+    <circle cx="1232" cy="19" r="3" fill="#34D399"/>
+    <text x="1242" y="23" class="font-mono" font-size="9.5" fill="#34D399">Live System Ready</text>
+
+    <!-- MOCKUP BODY -->
+    <!-- Left Dark Sidebar -->
+    <rect x="0" y="38" width="180" height="482" fill="#090D1A"/>
+    <line x1="180" y1="38" x2="180" y2="520" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Sidebar Mini Logo -->
+    <text x="20" y="68" class="font-sans" font-size="14" font-weight="800" fill="#0284C7">Pynt<tspan fill="url(#logoFlow)">flow</tspan></text>
+
+    <!-- Sidebar Menu Items -->
+    <rect x="12" y="88" width="156" height="30" rx="6" fill="#EA580C"/>
+    <text x="36" y="108" class="font-sans" font-size="11" font-weight="600" fill="#FFFFFF">🛒 POS Billing</text>
+
+    <g class="font-sans" font-size="11" font-weight="500" fill="#94A3B8">
+      <text x="36" y="140">📦 Inventory</text>
+      <text x="36" y="172">🚚 Purchases</text>
+      <text x="36" y="204">📈 Sales</text>
+      <text x="36" y="236">👥 Customers</text>
+      <text x="36" y="268">🔍 Branch Orders</text>
+      <text x="36" y="300">⏸ Hold Invoices</text>
+      <text x="36" y="332">💳 Credit &amp; Recovery</text>
+      <text x="36" y="364">🔒 Day Close</text>
+    </g>
+
+    <!-- Center Workspace -->
+    <rect x="180" y="38" width="860" height="482" fill="#F8FAFC"/>
+
+    <!-- Top Action Buttons -->
+    <g transform="translate(196, 50)" class="font-sans" font-size="9.5" font-weight="600">
+      <rect x="0" y="0" width="100" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="8" y="18" fill="#334155">#1 Counter Staff</text>
+
+      <rect x="110" y="0" width="60" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="118" y="18" fill="#475569">F2 Save</text>
+
+      <rect x="178" y="0" width="68" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="186" y="18" fill="#475569">F3 Search</text>
+
+      <rect x="254" y="0" width="76" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="262" y="18" fill="#475569">F4 Add Item</text>
+
+      <rect x="338" y="0" width="82" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="346" y="18" fill="#475569">F5 Save &amp; Print</text>
+
+      <rect x="428" y="0" width="60" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="436" y="18" fill="#475569">F7 Hold</text>
+    </g>
+
+    <!-- Invoice Header Pills -->
+    <g transform="translate(196, 90)">
+      <rect x="0" y="0" width="90" height="32" rx="6" fill="#EA580C"/>
+      <text x="45" y="20" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="700" fill="#FFFFFF">Sales Invoice</text>
+
+      <rect x="100" y="0" width="120" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="160" y="20" text-anchor="middle" class="font-sans" font-size="10.5" font-weight="500" fill="#475569">Credit Note (Return)</text>
+
+      <rect x="230" y="0" width="120" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="240" y="20" class="font-mono" font-size="9.5" fill="#334155">INV-72318</text>
+
+      <rect x="360" y="0" width="130" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="370" y="20" class="font-mono" font-size="9.5" fill="#334155">DATE 27/06/2026</text>
+    </g>
+
+    <!-- Customer Boxes Row -->
+    <g transform="translate(196, 134)">
+      <rect x="0" y="0" width="170" height="44" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="12" y="16" class="font-sans" font-size="8" font-weight="600" fill="#F97316">👤 CUSTOMER ACCOUNT</text>
+      <text x="12" y="32" class="font-sans" font-size="11" fill="#0F172A">Walk-In Customer 🔍</text>
+
+      <rect x="180" y="0" width="160" height="44" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="192" y="16" class="font-sans" font-size="8" font-weight="600" fill="#F97316">📊 CUSTOMER HISTORY</text>
+      <text x="192" y="32" class="font-sans" font-size="10" fill="#16A34A">Clear / No Udhaar</text>
+
+      <rect x="350" y="0" width="170" height="44" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="362" y="16" class="font-sans" font-size="8" font-weight="600" fill="#F97316">📝 REMARKS &amp; NOTES</text>
+      <text x="362" y="32" class="font-sans" font-size="10" fill="#94A3B8">Optional invoice notes...</text>
+    </g>
+
+    <!-- Search Bar -->
+    <g transform="translate(196, 190)">
+      <rect x="0" y="0" width="400" height="36" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="16" y="23" class="font-sans" font-size="11" fill="#94A3B8">🔍 Search product by name, code, barcode or shade... (F3)</text>
+
+      <rect x="410" y="0" width="40" height="36" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="425" y="23" text-anchor="middle" class="font-sans" font-size="11" fill="#0F172A">1</text>
+
+      <rect x="460" y="0" width="110" height="36" rx="6" fill="#EA580C"/>
+      <text x="515" y="23" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#FFFFFF">+ Add Item (F4)</text>
+    </g>
+
+    <!-- Products Table -->
+    <g transform="translate(196, 240)">
+      <rect x="0" y="0" width="824" height="28" fill="#F1F5F9"/>
+      <text x="10" y="18" class="font-mono" font-size="8.5" font-weight="600" fill="#64748B">#   CODE   PRODUCT   SHADE   PACK / UNIT   QTY   UNIT RATE   DISC %   AMOUNT   ACTION</text>
+      <rect x="0" y="28" width="824" height="160" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="412" y="110" text-anchor="middle" class="font-sans" font-size="12" fill="#94A3B8">No items in current invoice. Search product above to add.</text>
+    </g>
+
+    <!-- Right Billing Summary Panel -->
+    <rect x="1040" y="38" width="320" height="482" fill="#FFFFFF"/>
+    <line x1="1040" y1="38" x2="1040" y2="520" stroke="#E2E8F0" stroke-width="1"/>
+
+    <g transform="translate(1060, 56)">
+      <text x="0" y="16" class="font-sans" font-size="12" font-weight="700" fill="#F97316">🧾 BILLING SUMMARY</text>
+      <line x1="0" y1="26" x2="280" y2="26" stroke="#E2E8F0" stroke-width="1"/>
+
+      <g class="font-sans" font-size="11" fill="#64748B">
+        <text x="0" y="50">Subtotal</text>
+        <text x="280" y="50" text-anchor="end" class="font-mono" fill="#0F172A">0.00</text>
+
+        <text x="0" y="74">Discount (Item)</text>
+        <text x="280" y="74" text-anchor="end" class="font-mono" fill="#0F172A">0.00</text>
+
+        <text x="0" y="98">Invoice Discount</text>
+        <text x="280" y="98" text-anchor="end" class="font-mono" fill="#0F172A">0</text>
+
+        <text x="0" y="122">Delivery Charge</text>
+        <text x="280" y="122" text-anchor="end" class="font-mono" fill="#0F172A">0</text>
+      </g>
+
+      <line x1="0" y1="140" x2="280" y2="140" stroke="#E2E8F0" stroke-width="1"/>
+
+      <text x="0" y="170" class="font-sans" font-size="14" font-weight="800" fill="#0F172A">NET TOTAL</text>
+      <text x="280" y="172" text-anchor="end" class="font-mono" font-size="20" font-weight="800" fill="#0F172A">Rs. 0.00</text>
+
+      <!-- Pay Inputs -->
+      <g transform="translate(0, 190)">
+        <rect x="0" y="0" width="130" height="32" rx="4" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="10" y="20" class="font-mono" font-size="10" fill="#64748B">CASH: 0</text>
+
+        <rect x="150" y="0" width="130" height="32" rx="4" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="160" y="20" class="font-mono" font-size="10" fill="#64748B">CARD: 0</text>
+      </g>
+
+      <rect x="170" y="240" width="110" height="22" rx="11" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+      <text x="225" y="255" text-anchor="middle" class="font-sans" font-size="9" font-weight="600" fill="#059669">✓ Payment Success</text>
+
+      <!-- Big Orange Save & Print button -->
+      <rect x="0" y="275" width="280" height="44" rx="8" fill="#EA580C"/>
+      <text x="140" y="302" text-anchor="middle" class="font-sans" font-size="12" font-weight="700" fill="#FFFFFF">🖨 SAVE &amp; PRINT (F9)</text>
+
+      <g transform="translate(0, 330)">
+        <rect x="0" y="0" width="130" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="65" y="20" text-anchor="middle" class="font-sans" font-size="10" font-weight="600" fill="#475569">💾 Save (F2)</text>
+
+        <rect x="150" y="0" width="130" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="215" y="20" text-anchor="middle" class="font-sans" font-size="10" font-weight="600" fill="#475569">⏸ Hold (F7)</text>
+      </g>
+
+      <rect x="0" y="375" width="280" height="30" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+      <text x="140" y="394" text-anchor="middle" class="font-sans" font-size="10" font-weight="600" fill="#DC2626">🚫 Cancel Invoice (F8)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Badges Row -->
+  <g transform="translate(800, 965)" class="font-sans" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">
+    <text x="-280" y="0">■ Keyboard Hotkey Speed (F2 to F9 Navigation)</text>
+    <text x="0" y="0">■ Instant Walk-in &amp; Painter Khata Ledger</text>
+    <text x="280" y="0">■ One-Click Thermal Save &amp; Print (F9)</text>
+  </g>
+</svg>

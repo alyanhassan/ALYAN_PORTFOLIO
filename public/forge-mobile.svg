@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800;900&amp;family=Space+Mono:wght@700&amp;display=swap');
+      .font-impact { font-family: 'Archivo Black', 'Impact', -apple-system, sans-serif; font-weight: 900; }
+      .font-sans { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+      .font-mono { font-family: 'Space Mono', monospace; }
+    </style>
+
+    <linearGradient id="mobileBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="40%" stop-color="#0E0E0E"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+
+    <radialGradient id="mobileSpot" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#242424" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Dark Atmospheric Background -->
+  <rect x="0" y="0" width="390" height="844" fill="url(#mobileBgGrad)"/>
+
+  <!-- Gym Athlete Silhouette Shadow in Background -->
+  <path d="M 120 180 Q 200 130 280 180 Q 320 260 300 420 Q 250 480 160 460 Q 90 380 120 180 Z" fill="#181818" opacity="0.6"/>
+  <!-- Barbell shaft silhouette -->
+  <line x1="30" y1="360" x2="360" y2="280" stroke="#222222" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Overlay gradient -->
+  <rect x="0" y="0" width="390" height="844" fill="url(#mobileSpot)"/>
+
+  <!-- Header -->
+  <g transform="translate(20, 42)">
+    <!-- FORGE. Logo -->
+    <text x="0" y="0" fill="#FFFFFF" class="font-impact" font-size="28" letter-spacing="-0.8">FORGE<tspan fill="#D4FF00">.</tspan></text>
+
+    <!-- Hamburger Menu Button -->
+    <g transform="translate(312, -24)">
+      <rect x="0" y="0" width="38" height="34" fill="#141414" stroke="#262626" stroke-width="1" rx="3"/>
+      <line x1="10" y1="12" x2="28" y2="12" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="10" y1="17" x2="28" y2="17" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="10" y1="22" x2="28" y2="22" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Big Background Cut-Off Typography -->
+  <g id="bg-type">
+    <text x="-10" y="160" fill="#ECEBE6" class="font-impact" font-size="52" letter-spacing="-1.5" opacity="0.85">
+      THLETIC — NO EXCU
+    </text>
+    <text x="-10" y="215" fill="none" stroke="#3E3E3E" stroke-width="1.5" class="font-impact" font-size="52" letter-spacing="-1.5">
+      STANDARD — UNYIE
+    </text>
+  </g>
+
+  <!-- Tag: Red Dot + ATHLETIC PERFORMANCE FACILITY -->
+  <g transform="translate(20, 275)">
+    <rect x="0" y="0" width="232" height="26" fill="#141414" stroke="#222222" stroke-width="1" rx="2"/>
+    <circle cx="15" cy="13" r="3.5" fill="#E53935"/>
+    <text x="28" y="16.5" fill="#D4FF00" class="font-mono" font-size="8" font-weight="700" letter-spacing="1">ATHLETIC PERFORMANCE FACILITY</text>
+  </g>
+
+  <!-- Main Headline -->
+  <g transform="translate(20, 345)">
+    <text x="0" y="0" fill="#FFFFFF" class="font-impact" font-size="28" letter-spacing="-0.5">SEVEN LOCATIONS.</text>
+    <text x="0" y="34" fill="#D4FF00" class="font-impact" font-size="28" letter-spacing="-0.5">ONE UNYIELDING STANDARD.</text>
+  </g>
+
+  <!-- Description Body Paragraph -->
+  <g transform="translate(20, 420)">
+    <text x="0" y="0" fill="#8E8E8E" class="font-sans" font-size="12" font-weight="500" letter-spacing="0.2">
+      <tspan x="0" dy="0">Engineered for high-output powerlifting, combat</tspan>
+      <tspan x="0" dy="18">conditioning, and kinetic recovery. No fluff. No</tspan>
+      <tspan x="0" dy="18">compromises. Hardcoded for extreme physical results.</tspan>
+    </text>
+  </g>
+
+  <!-- Action Buttons -->
+  <g transform="translate(20, 520)">
+    <!-- Primary Button: CLAIM 3-DAY TRIAL PASS → -->
+    <rect x="0" y="0" width="350" height="52" fill="#D4FF00" rx="3"/>
+    <text x="175" y="32" text-anchor="middle" fill="#0A0A0A" class="font-sans" font-size="13" font-weight="900" letter-spacing="0.4">
+      CLAIM 3-DAY TRIAL PASS  →
+    </text>
+
+    <!-- Secondary Button: VIEW TIMETABLE -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="144" height="46" fill="none" stroke="#2E2E2E" stroke-width="1.2" rx="3"/>
+      <text x="72" y="28" text-anchor="middle" fill="#FFFFFF" class="font-sans" font-size="11" font-weight="800" letter-spacing="0.6">
+        VIEW TIMETABLE
+      </text>
+    </g>
+  </g>
+</svg>

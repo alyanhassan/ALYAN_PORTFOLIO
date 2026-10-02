@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
+      .font-sans { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+    </style>
+    <pattern id="mobileGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#E2E8F0" stroke-width="0.6" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="logoFlowMobile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Background with subtle grid -->
+  <rect x="0" y="0" width="390" height="844" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="390" height="844" fill="url(#mobileGrid)"/>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="390" height="64" fill="#FFFFFF" fill-opacity="0.95"/>
+  <line x1="0" y1="64" x2="390" y2="64" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Logo Left -->
+  <text x="20" y="41" class="font-sans" font-size="24" font-weight="800" fill="#0284C7" letter-spacing="-0.5">Pynt<tspan fill="url(#logoFlowMobile)">flow</tspan></text>
+
+  <!-- Right Actions: Demo pill + Hamburger -->
+  <rect x="250" y="18" width="66" height="30" rx="15" fill="#0F172A"/>
+  <text x="283" y="38" text-anchor="middle" class="font-sans" font-size="11.5" font-weight="600" fill="#FFFFFF">Demo</text>
+
+  <!-- Hamburger Menu Icon -->
+  <rect x="332" y="16" width="36" height="34" fill="none" rx="6" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="342" y1="27" x2="358" y2="27" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="342" y1="33" x2="358" y2="33" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="342" y1="39" x2="358" y2="39" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Blue Pill Badge -->
+  <g transform="translate(20, 96)">
+    <rect x="0" y="0" width="350" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="18" cy="14" r="3.5" fill="#2563EB"/>
+    <text x="28" y="18" class="font-sans" font-size="9.5" font-weight="600" fill="#334155">Built Specifically for Paint Retailers &amp; Wholesale Dealers</text>
+  </g>
+
+  <!-- Main Headline in 3 Lines -->
+  <g class="font-sans" font-size="30" font-weight="800" fill="#0F172A" letter-spacing="-0.8" text-anchor="middle">
+    <text x="195" y="172">The Point of Sale Built</text>
+    <text x="195" y="210">for Paint Buckets, Bases</text>
+    <text x="195" y="248">&amp; Khatas.</text>
+  </g>
+
+  <!-- Subtitle Paragraph -->
+  <g class="font-sans" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">
+    <text x="195" y="290">Stop forcing grocery software onto paint inventory.</text>
+    <text x="195" y="312">Manage AI invoice scanning, paint tokens, gallons,</text>
+    <text x="195" y="334">16L drums, tinting formulas, painter credit</text>
+    <text x="195" y="356">balances, and supplier bills from one purpose-built</text>
+    <text x="195" y="378">counter system.</text>
+  </g>
+
+  <!-- CTA Buttons -->
+  <g transform="translate(20, 420)">
+    <rect x="0" y="0" width="350" height="48" rx="24" fill="#0F172A"/>
+    <text x="175" y="29" text-anchor="middle" class="font-sans" font-size="13.5" font-weight="700" fill="#FFFFFF">Request Free Live Demo →</text>
+  </g>
+
+  <g transform="translate(20, 480)">
+    <rect x="0" y="0" width="350" height="48" rx="24" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <polygon points="120,20 120,28 128,24" fill="#2563EB"/>
+    <text x="185" y="30" text-anchor="middle" class="font-sans" font-size="13.5" font-weight="600" fill="#1E293B">Explore Features</text>
+  </g>
+
+  <!-- 4 Checklist Items (2x2 Grid) -->
+  <g class="font-sans" font-size="11" font-weight="500" fill="#334155" transform="translate(50, 570)">
+    <!-- Row 1 -->
+    <text x="0" y="0" fill="#059669">✓<tspan fill="#334155"> AI Invoice Scanner</tspan></text>
+    <text x="150" y="0" fill="#059669">✓<tspan fill="#334155"> Paint Token Ledger</tspan></text>
+
+    <!-- Row 2 -->
+    <text x="0" y="34" fill="#059669">✓<tspan fill="#334155"> Gallon &amp; Drum Units</tspan></text>
+    <text x="150" y="34" fill="#059669">✓<tspan fill="#334155"> Silent Thermal Printing</tspan></text>
+  </g>
+</svg>

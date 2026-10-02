@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var origDefineProperty = Object.defineProperty;
+          function makeFetchWritable(target) {
+            if (!target) return;
+            var desc = Object.getOwnPropertyDescriptor(target, 'fetch');
+            if (desc && (desc.get || desc.writable === false) && !desc.set && desc.configurable !== false) {
+              var val = target.fetch;
+              origDefineProperty.call(Object, target, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function () {
+                  return val;
+                },
+                set: function (v) {
+                  val = v;
+                },
+              });
+            }
+          }
+          makeFetchWritable(window);
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            makeFetchWritable(Window.prototype);
+          }
+          Object.defineProperty = function (target, prop, descriptor) {
+            if (
+              prop === 'fetch' &&
+              (target === window ||
+                target === globalThis ||
+                (typeof Window !== 'undefined' && target === Window.prototype)) &&
+              descriptor &&
+              ((descriptor.get && !descriptor.set) || descriptor.writable === false)
+            ) {
+              var origGet = descriptor.get;
+              var current = descriptor.value;
+              var overridden = false;
+              return origDefineProperty.call(Object, target, prop, {
+                configurable: true,
+                enumerable: descriptor.enumerable !== false,
+                get: function () {
+                  if (overridden) return current;
+                  return origGet ? origGet.call(this) : current;
+                },
+                set: function (v) {
+                  overridden = true;
+                  current = v;
+                },
+              });
+            }
+            return origDefineProperty.call(Object, target, prop, descriptor);
+          };
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alyan Hassan | Full Stack Developer &amp; Software Builder, Karachi</title>
+    <meta name="description" content="I'm Alyan Hassan, a self-taught full stack developer based in Karachi. I build websites, software and AI automation for businesses." />
+    <meta property="og:title" content="Alyan Hassan | Full Stack Developer &amp; Software Builder, Karachi" />
+    <meta property="og:description" content="I'm Alyan Hassan, a self-taught full stack developer based in Karachi. I build websites, software and AI automation for businesses." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Fraunces:opsz,wght@9..144,100..900&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
